@@ -1,0 +1,39 @@
+.terms {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+        &__thumb {
+            position: relative;
+            margin-top: 20px;
+            text-align: center;
+        }
+    
+        &__input {
+            appearance: none;
+        }
+    
+        &__custom {
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+            border: 2px solid #212121;
+            border-radius: 2px;
+            margin-right: 7px;
+    
+        }
+    
+        &__input:checked~&__custom {
+            background-image: url(../image/icons/check.svg);
+            background-size: contain;
+            border: none;
+        }
+}
+
+

@@ -1,0 +1,36 @@
+:root {
+    /* fonst */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* colors */
+    --accent-txt-cl: #2196F3;
+    --main-txt-cl: #212121;
+    --secondary-txt-color: #757575;
+    --secondary-txt-color-footer: rgba(255, 255, 255, 0.6);
+    --color-button: #F5F4FA;
+    --footer-txt-color: #fff;
+
+    /* bg colors */
+    --accent-bg-cl: #188CE8;
+    --main-bg-cl: #2F303A;
+    --secondary-bg-color: #757575;
+    --third-bg-color: #F5F4FA;
+    --backdrop-color: rgba(0, 0, 0, 0.2);
+    --form-button-color: #2196F3;
+    --form-focus-button-color: #188CE8;
+
+    /* border colors */
+    --border-color: #ECECEC;
+    --our-clients-border-accent: #2196F3;
+    --focus-form-border-color: #2196F3;
+    --form-border-color: rgba(255, 255, 255, 0.3);
+
+    /* icons-colors */
+    --icons-primary: #AFB1B8;
+    --icons-secondary: #ffffff;
+    --icons-accent-color:#2196F3;
+
+    /* transition timing function */
+    --cubic-primary: cubic-bezier(0.4, 0, 0.2, 1);
+}

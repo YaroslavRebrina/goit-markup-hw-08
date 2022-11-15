@@ -1,0 +1,81 @@
+/* primary rules */
+body {
+    color: var(--main-txt-cl);
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+}
+
+.section {
+    padding: 60px 0;
+
+}
+
+.list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sections-headers {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.page-header {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

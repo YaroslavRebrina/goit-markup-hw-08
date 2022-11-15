@@ -1,0 +1,25 @@
+// vars
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// base
+@import "./utils/base";
+
+
+// components 
+// @import"./components/header";
+@import "./components/header-mobile";
+@import "./components/navigation";
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/socials";
+@import "./components/subscription-form";
+@import "./components/examples";
+@import "./components/section-hero";
+@import "./components/section-benefits";
+@import "./components/section-team";
+@import "./components/section_clients";
+@import "./components/section-servise";
+@import "./components/footer";
+@import "./components/terms";
+@import "./components/burger-menu";
