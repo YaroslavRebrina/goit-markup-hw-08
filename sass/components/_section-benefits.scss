@@ -16,6 +16,8 @@
                 flex-wrap: wrap;
                 flex-direction: row;
             }
+
+            
         }
     
         &__item {
@@ -26,6 +28,10 @@
             
             @media screen and (max-width:767px){
             align-items: center;
+            }
+
+            @media screen and (min-width:1200px){
+                flex-basis: calc((100% - 90px)/4);
             }
         }
     

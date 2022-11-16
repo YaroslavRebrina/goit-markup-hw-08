@@ -2,6 +2,10 @@
 
         .section-clients__container{
             width: 100%;
+
+        @media screen and (min-width:1200px) {
+        width: 1200px;
+        }
         }
     
         &__flexbox {
@@ -21,6 +25,9 @@
             height: 92px;
             @media screen and (min-width:768px) {
                 width: 226px;
+            }
+            @media screen and (min-width:1200px) {
+                width: calc((100% - 150px) / 6);
             }
         }
     

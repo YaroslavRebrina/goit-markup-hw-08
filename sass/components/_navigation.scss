@@ -1,7 +1,5 @@
 .navigation {
 
-
-
     @media screen and (min-width:768px) {
         display: flex;
         align-items: center;
@@ -75,8 +73,8 @@
     color: var(--accent-txt-cl);
     }
         
-    &:after {
-        @media screen and (min-width: 768x) {
+            &::after {
+            @media screen and (min-width: 768x) {
             content: "";
             position: absolute;
             left: 0;

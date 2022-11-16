@@ -1,5 +1,4 @@
 .logo {
-    // margin-right: 93px;
 
     font-family: var(--secondary-font);
     text-decoration: none;
@@ -16,6 +15,9 @@
     
         &--inversed {
             color: #fff;
+        }
+                
+        @media screen and (min-width:1200px) {margin-right: 93px;
         }
 }
 
