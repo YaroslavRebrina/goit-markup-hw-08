@@ -51,6 +51,10 @@
 
         &__footer {
             padding-bottom: 30px;
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
         }
     
         &__link--footer {

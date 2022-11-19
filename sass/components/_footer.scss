@@ -43,6 +43,9 @@
         }
     
         &__logo {
+            @media screen and (max-width: 767px){
+                align-self: center;
+            }
             display: block;
             margin-bottom: 20px;
         }
