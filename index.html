@@ -43,13 +43,13 @@
         <!-- Contacts -->
         <ul class="header__contacts list">
           <li class="header__item">
-            <a class="header__address" href="mailto:info@devstudio.com"><svg class="header__img--mail" width="16"
+            <a class="header__address" href="mailto:info@devstudio.com"><svg class="header__img--mail" width="14"
                 height="12">
                 <use href="./image/icons/symbol-defs.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
           </li>
           <li class="header__item">
-            <a class="header__address" href="tel:380961111111"><svg class="header__img--tel" width="10" height="16">
+            <a class="header__address" href="tel:380961111111"><svg class="header__img--tel" width="10" height="14">
                 <use href="./image/icons/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a>
@@ -175,7 +175,13 @@
         <h2 class="sections-headers sections-headers--team">Наша команда</h2>
         <ul class="list section-team__flexbox">
           <li class="section-team__item">
-            <img class="section-team__img" srcset="./image/studio-page/hwteam1-450.jpg 1x,./image/studio-page/hwteam1-450@2x.jpg 2x" src="./image/studio-page/hwteam1-450.jpg" alt="фото Ігора Дем'яненко"/>
+            <img
+              class="section-team__img"
+              srcset="./image/studio-page/hwteam1-450.jpg 450w, ./image/studio-page/hwteam1-354.jpg 354w, ./image/studio-page/hwteam1-270.jpg 270w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+              src="./image/studio-page/hwteam1-450"
+              alt="фото Ігора Дем'яненко"
+            />
             <div class="section-team__wrap">
               <h3 class="section-team__name">Ігор Дем'яненко</h3>
               <p class="section-team__postion">Product Designer</p>
@@ -204,7 +210,13 @@
             </div>
           </li>
           <li class="section-team__item">
-            <img class="section-team__img" srcset="./image/studio-page/hwteam2-450.jpg 1x, ./image/studio-page/hwteam2-450@2x.jpg 2x" src="./image/studio-page/hwteam2-450.jpg" alt="фото Ольги Рєпіної"/>
+            <img
+              class="section-team__img"
+              srcset="./image/studio-page/hwteam2-450.jpg 450w, ./image/studio-page/hwteam2-354.jpg 354w, ./image/studio-page/hwteam2-270.jpg 270w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+              src="./image/studio-page/hwteam2-450"
+              alt="фото Ольги Репіної"
+            />
             <div class="section-team__wrap">
               <h3 class="section-team__name">Ольга Рєпіна</h3>
               <p class="section-team__postion">Frontend Developer</p>
@@ -233,7 +245,13 @@
             </div>
           </li>
           <li class="section-team__item">
-            <img class="section-team__img" srcset="./image/studio-page/hwteam3-450.jpg 1x,./image/studio-page/hwteam3-450@2x.jpg 2x" src="./image/studio-page/hwteam3-450.jpg" alt="фото Миколи Тарасова"/>
+            <img
+              class="section-team__img"
+              srcset="./image/studio-page/hwteam3-450.jpg 450w, ./image/studio-page/hwteam3-354.jpg 354w, ./image/studio-page/hwteam3-270.jpg 270w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+              src="./image/studio-page/hwteam3-450"
+              alt="фото Миколи Тарасова"
+            />
             <div class="section-team__wrap">
               <h3 class="section-team__name">Микола Тарасов</h3>
               <p class="section-team__postion">Marketing</p>
@@ -262,7 +280,13 @@
             </div>
           </li>
           <li class="section-team__item">
-            <img class="section-team__img" srcset="./image/studio-page/hwteam4-450.jpg 1x,./image/studio-page/hwteam4-450@2x.jpg 2x" src="./image/studio-page/hwteam4-450.jpg" alt="фото Михайла Єрмакова"/>
+            <img
+              class="section-team__img"
+              srcset="./image/studio-page/hwteam4-450.jpg 450w, ./image/studio-page/hwteam4-354.jpg 354w, ./image/studio-page/hwteam4-270.jpg 270w"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+              src="./image/studio-page/hwteam4-450"
+              alt="фото Михайла Єрмакова"
+            />
             <div class="section-team__wrap">
               <h3 class="section-team__name">Михайло Єрмаков</h3>
               <p class="section-team__postion">UI Designer</p>
@@ -296,7 +320,6 @@
     <!-- our clients -->
     <section class="section section-clients">
       <div class="container section-clients__container">
-        <div class="section-clients__content">
           <h2 class="sections-headers sections-headers--clients">
             Постійні клієнти
           </h2>
@@ -338,7 +361,6 @@
               </a>
             </li>
           </ul>
-        </div>
       </div>
     </section>
   </main>
@@ -439,8 +461,8 @@
         <label class="terms terms__thumb" for="checkbox">
           <input class="terms__input visually-hidden" type="checkbox" name="terms" id="checkbox" />
           <span class="terms__custom"></span>
-          Погоджуюся з розсилкою та приймаю
-          <a class="terms__link" href="#">Умови договору</a>
+          <span>          Погоджуюся з розсилкою та приймаю
+          <a class="terms__link" href="#">Умови договору</a></span>
         </label>
         <button class="button button-submit" type="submit">Відправити</button>
       </form>

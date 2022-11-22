@@ -72,16 +72,12 @@
 }
 
 .active{
-
-    @media screen and (max-width: 767px){
     color: var(--accent-txt-cl);
-    }
-        
-
 }
 
     .active::after {
-    
+
+        @media screen and (min-width: 768px) {
         content: "";
         position: absolute;
         left: 0;
@@ -92,4 +88,5 @@
     
         border-radius: 2px;
         background-color: var(--accent-bg-cl);
+        }
     }

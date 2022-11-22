@@ -1,15 +1,14 @@
 .section-hero{
     background-color: var(--main-bg-cl);
-    width: 100%;
-    height: 400px;
+    
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 118px 60px;
+    padding: 118px 0;
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
     url(../image/studio-page/hero-background-480.jpg);
     background-repeat: no-repeat;
-    // background-position: center;
     background-size:cover;
 
     text-align: center;
@@ -23,7 +22,6 @@
 
     @media screen and (min-width:1200px){
         padding: 200px 0px;
-        height: 100%;
         background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -55,7 +53,7 @@
  
 
     &__header {
-        display: block;
+        
             max-width: 360px;
             margin: 0 auto;
             color: #fff;
@@ -65,6 +63,11 @@
             line-height: 1.62;
             letter-spacing: 0.06em;
             text-transform: uppercase;
+
+            @media screen and (min-width:1200px){
+                font-size: 44px;
+                max-width: 696px;
+            }
         }
     
     
@@ -78,15 +81,6 @@
 
 }
 
-   .section-hero__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       width: 100%;
-    @media screen and (min-width:1200px){
-    width: 1200px;
-    }
-   }    
 
 
 /* section hero modal */
@@ -226,48 +220,7 @@
 }
 
 
-.terms {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-
-        &__thumb {
-            position: relative;
-            margin-top: 20px;
-            text-align: center;
-        }
-    
-        &__input {
-            appearance: none;
-        }
-    
-        &__custom {
-            display: inline-block;
-            width: 16px;
-            height: 15px;
-            border: 2px solid #212121;
-            border-radius: 2px;
-            margin-right: 7px;
-    
-        }
-    
-        &__input:checked~&__custom {
-            background-image: url(../image/icons/check.svg);
-            background-size: contain;
-            border: none;
-        }
-    
-        &__link {
-            color: var(--accent-txt-cl);
-            margin-left: 4px;
-        }
-}
 
 
 

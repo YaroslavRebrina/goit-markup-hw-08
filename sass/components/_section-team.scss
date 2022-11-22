@@ -1,15 +1,5 @@
 .section-team{
-    background-color: var(--third-bg-color);
-
-        .section-team__container{
-            width: 100% ;
-
-        @media screen and (min-width:1200px) {
-               width: 1200px;
-            }
-        }
-
-        
+    background-color: var(--third-bg-color);      
 
         &__flexbox {
             display: flex;

@@ -1,12 +1,4 @@
 .section-clients{
-
-        .section-clients__container{
-            width: 100%;
-
-        @media screen and (min-width:1200px) {
-        width: 1200px;
-        }
-        }
     
         &__flexbox {
             display: flex;

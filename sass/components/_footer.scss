@@ -21,6 +21,7 @@
     
         &__flexbox {
             display: flex;
+            align-items: baseline;
             flex-direction: column;
 
             @media screen and (max-width:768px) {
@@ -43,9 +44,10 @@
         }
     
         &__logo {
-            @media screen and (max-width: 767px){
-                align-self: center;
+            @media screen and (max-width: 1200px){
+                text-align: center;;
             }
+            margin: 0;
             display: block;
             margin-bottom: 20px;
         }

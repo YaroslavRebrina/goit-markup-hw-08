@@ -1,35 +1,78 @@
 .header {
     border-bottom: 1px solid #ECECEC;
+    @media screen and (min-width:480px)  and (max-width:767px){
+    padding: 16px 0;
+    }
 
     &__container {
         display: flex;
         align-items: center;
+        width: 100%;
+
+        @media screen and (min-width:768px) and (max-width:1199px) {
+        justify-content: space-between;
+        }
+
+        @media screen and (min-width:1200px) {
+        width: 1200px;
         
+        }
     }
 
     &__navigation {
         display: flex;
 
+        @media screen and (min-width:1200px) {
+            align-items: center;
+        }
+    }
+    
+    &__content {
+        display: none;
+        
+        @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        gap: 96px;
+        }
 
+        @media screen and (min-width:1200px) {
+        display: flex;
+        }
     }
 
     &__contacts {
+        @extend .list;
         display: flex;
         justify-content: center;
-        @extend .list;
         margin-left: auto;
+
+        @media screen and (min-width:768px){
+            flex-direction: column;
+            gap: 10px;
+        }
+
+                @media screen and (min-width:1200px) {
+                flex-direction: row;
+                margin-left: 305px;
+                    
+                }
     }
+    
 
     &__address {
         text-decoration: none;
         color: var(--secondary-txt-color);
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         display: flex;
         align-items: center;
+
+        @media screen and (min-width:1200px){
+        font-size: 14px;
         padding: 32px 0;
+        }
 
         transition: color 250ms var(--cubic-primary);
     }
@@ -41,29 +84,32 @@
         color: var(--accent-txt-cl);
     }
 
-    &__item:not(:first-child) {
-        margin-left: 50px;
-    }
-
-    &__contacts {
-        display: flex;
-        justify-items: center;
-        align-items: center;
+    .header__item:not(:first-child) {
+        @media screen and (min-width:1200px) {
+        margin-left: 30px;
+        }
+        
     }
 
     &__img--mail {
         fill: currentColor;
         margin-right: 10px;
+        @media screen and (min-width:1200px){
+            width: 16px;
+        }
     }
 
     &__img--tel {
         fill: currentColor;
         margin-right: 10px;
+
+        @media screen and (min-width:1200px) {
+                height: 16px;
+    }
     }
 
     &__address:hover &__img--mail,
     &__address:focus &__img--tel {
         fill: var(--accent-bg-cl);
     }
-}
-
+}   
