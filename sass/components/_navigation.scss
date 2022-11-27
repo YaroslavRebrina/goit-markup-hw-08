@@ -21,16 +21,12 @@
             
     }
     
-    
-        
-    
-    
         &__link 
         
         {
             position: relative;
 
-            padding: 32px 0;
+
             
             transition:
             color 250ms var(--cubic-primary),
@@ -58,6 +54,7 @@
             font-size: 14px;
             line-height: 16px;
             letter-spacing: 0.02em;
+            padding: 32px 0;
             }
 
         
